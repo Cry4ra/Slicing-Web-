@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ara.fm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+
+  <div class="player-app">
+    <header class="navbar">
+      <div class="brand">
+        <span class="logo">▶</span>
+        <h1>Ara.fm 1303</h1>
+      </div>
+      <div class="nav-actions">
+        <input type="text" id="searchInput" placeholder="🔍 Cari lagu atau artis...">
+        <button id="themeToggleBtn" class="icon-btn" title="Ubah Tema">🌙</button>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <main class="player-card">
+        <div class="album-wrapper">
+          <img id="cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuyt6ONiP3W5WBnopI0BCryIcfOid1pTuDW7wWqvPobhA7b3c2aG9knfo&s=10" alt="Album Cover">
+        </div>
+
+        <div class="track-details">
+          <div class="title-row">
+            <div>
+              <h2 id="title">Dynamite</h2>
+              <p id="artist">BTS</p>
+            </div>
+            <button id="likeBtn" class="like-btn" title="Sukai Lagu">🤍</button>
+          </div>
+
+          <div class="progress-section">
+            <div class="progress-bar" id="progressBar">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="time-display">
+              <span id="currentTime">0:00</span>
+              <span id="duration">3:19</span>
+            </div>
+          </div>
+
+          <div class="controls-row">
+            <button id="prevBtn" class="ctrl-btn" title="Sebelumnya">⏮</button>
+            <button id="playBtn" class="play-btn" title="Putar/Jeda">▶</button>
+            <button id="nextBtn" class="ctrl-btn" title="Berikutnya">⏭</button>
+          </div>
+        </div>
+      </main>
+
+      <section class="playlist-section">
+        <h3>Daftar Lagu</h3>
+        <div class="song-list" id="songList"></div>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
